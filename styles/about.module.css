@@ -1,3 +1,4 @@
+
 .main {
     background-color: var(--quaternary-color);
     display: flex;
@@ -6,4 +7,16 @@
     align-items: center;
     padding: 6rem;
     min-height: 100vh;
+}
+
+#carouselImage {
+    height: 200px;
+    width: 200px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    object-fit: cover;
+    align-items: center;
+    margin: 40px 0px;
 }

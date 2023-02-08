@@ -2,8 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import { Inter } from '@next/font/google'
 import styles from '@/styles/About.module.css'
-import Link from 'next/link'
-import data from '@/data/data.json'
+import data from '/data/data.json'
 import { useRouter } from 'next/router'
 import BgUpside from 'public/background-images/backgroundMountain.jpg'
 import upArrow from 'public/icons/upwardArrow.png'
@@ -45,42 +44,48 @@ export default function About() {
 
       <main className={styles.main}>
 
-        <div>
+        <div className={styles.aboutUs}>
+          <div></div>
           <h1>About Us</h1>
-          <h1>DEPARTMENTS</h1>
+          <div></div>
         </div>
 
-        <div>
+        <div className={styles.infoPara}>
+
           <p>We are proud to deliver an education that goes beyond textbooks and classrooms.</p>
-          <p>Our students gain the technical skils, real-world experience, and problem-solving ability needed to embrace complexity and lead innovation in a rapidly changing workforce.</p>
-          <p>Through close collaboration with industry, our network of alumni and partners continue to achieve global success.</p>
+          <p>Our students gain the technical skils, real-world experience, and problem-solving ability <br /> needed to embrace complexity and lead innovation in a rapidly changing workforce.</p>
+          <p>Through close collaboration with industry, our network of alumni and partners continue to <br /> achieve global success.</p>
+        </div>
+
+        <div className={styles.infoPara}>
+
+          <div className={styles.subHeader}>
+            <h2>Information Sessions</h2>
+          </div>
+
           <p>Information sessions are a simple way to figure out the next step along your career path.</p>
           <p>Learn more about the programs that interest you.</p>
-          <p>Big Info is the largest program expo and information session at BCIT. It's your chance to find out about all our programs - from business, computing, and health to engineering, trades, and applied sciences.</p>
-          <p>If you missed our fall event the next Big Info is scheduled to return on February 15, 2023.</p>
-        </div>
 
-        <div>
-          <h2>Information Sessions</h2>
-          <h2>Campus Tours</h2>
-        </div>
+          <div className={styles.subHeader3}>
+            <h3>Big Info</h3>
+          </div>
 
-        <div>
-          <h3>Big Info</h3>
-        </div>
+          <div className={styles.infoPara}>
+            <p>Big Info is the largest program expo and information session at BCIT. It's your chance to find out about all our programs - from business, computing, and health to engineering, trades, and applied sciences.</p>
+            <p>If you missed our fall event the next Big Info is scheduled to return on February 15, 2023.</p>
+          </div>
 
+          <div className={styles.subHeader}>
+            <h2>Campus Tours</h2>
+          </div>
+
+          <div className={styles.infoPara}>
+            <p>Tours run weekdays September to May, on our Burnaby campus. See BCIT in person and get a taste of campus life. </p>
+          </div>
+        </div>
 
         <Image src={leftArrow} width={40} height={60} />
         <Image src={rightArrow} width={40} height={60} />
-
-        <ul>
-          <li>Applied & Natural Sciences</li>
-          <li>Business & Media</li>
-          <li>Computing & IT</li>
-          <li>Engineering</li>
-          <li>Health Sciences</li>
-          <li>Trades & Apprenticeships</li>
-        </ul>
 
         <div id="carouselImages">
           <Image src={carouselOne} width={40} height={60} />
@@ -97,6 +102,22 @@ export default function About() {
             <Image src={downArrow} width={40} height={60} />
           </span>
         </a>
+
+        <div className={styles.departments}>
+          <div></div>
+          <h1>DEPARTMENTS</h1>
+          <div></div>
+        </div>
+
+        <ul>
+          <li>Applied & Natural Sciences</li>
+          <li>Business & Media</li>
+          <li>Computing & IT</li>
+          <li>Engineering</li>
+          <li>Health Sciences</li>
+          <li>Trades & Apprenticeships</li>
+        </ul>
+
       </main>
     </>
   )

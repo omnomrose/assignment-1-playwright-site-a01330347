@@ -3,13 +3,69 @@
     background-color: var(--quaternary-color);
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     align-items: center;
-    padding: 6rem;
+    padding: 9rem;
     min-height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-#carouselImage {
+.aboutUs {
+    display: flex;   
+    gap: 5rem;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.aboutUs > h1{
+    display: flex;   
+    flex-direction: row;
+}
+
+.aboutUs > div {
+    background-color: var(--secondary-color);
+    width: 60vh;
+    height: 4px;
+  }
+
+.infoPara {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 80%;
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+
+.subHeader {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+
+.subHeader3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    font-weight: 200;
+}
+
+.departments {
+    display: flex;   
+    gap: 5rem;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.departments > div {
+    background-color: var(--secondary-color);
+    width: 60vh;
+    height: 4px;
+}
+
+#carouselImages {
     height: 200px;
     width: 200px;
     background-repeat: no-repeat;

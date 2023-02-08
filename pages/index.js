@@ -6,6 +6,8 @@ import Link from 'next/link'
 import { useRouter } from 'next/router'
 import Bg from 'public/background-images/backgroundMountain.jpg'
 import downArrow from 'public/icons/downwardArrow.png'
+import grad from '@/components/grad'
+
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -32,44 +34,44 @@ export default function Home() {
       />
 
       <main className={styles.main}>
-        <div className={styles.mainContent}>
-          <div className={styles.mainHeader}>
 
-            <h1>An investment in <br />
-              knowledge pays the best <br />
-              interest.</h1>
-          </div>
-
-          <p>Different than a college or university, the British Columbia <br />
-            Institute of Technology offers practical, flexible, applied <br /> education with instructors who have direct, hands-on <br />
-            experience in their field.</p>
-
-          <a>
-            <div className={styles.buttons}>
-              <button
-                className={styles.buttons}
-                onClick={() =>
-                  router.push('/about')
-                }>
-                More About Us
-              </button>
-
-              <button
-                className={styles.buttons}
-                onClick={() =>
-                  router.push('/contact')
-                }>
-                Contact Us
-              </button>
-
-            </div>
-          </a>
-
+        <div className={styles.nav}>
+          <hamburger></hamburger>
+          <gradHat></gradHat>
         </div>
+
+        <div className={styles.mainHeader}>
+          <h1>An investment in <br />
+            knowledge pays the best <br />
+            interest.</h1>
+        </div>
+
+        <p>Different than a college or university, the British Columbia <br />
+          Institute of Technology offers practical, flexible, applied <br /> education with instructors who have direct, hands-on <br />
+          experience in their field.</p>
+
+        <a>
+          <button
+            className={styles.buttons}
+            onClick={() =>
+              router.push('/about')
+            }>
+            More About Us
+          </button>
+
+          <button
+            className={styles.buttons}
+            onClick={() =>
+              router.push('/contact')
+            }>
+            Contact Us
+          </button>
+        </a>
+
 
         <a className={styles.downArrow} href="/about">
           <span>
-            <Image src={downArrow} width={50} height={70} />
+            <Image src={downArrow} width={40} height={50} />
           </span>
         </a>
       </main>

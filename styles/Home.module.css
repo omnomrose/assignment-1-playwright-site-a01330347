@@ -2,7 +2,39 @@
   min-height: 100vh;
 }
 
-.mainContent {
+.nav {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  margin-left: 5rem;
+}
+.mainHeader {
+  display: flex;
+  padding: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+/* MEDIA QUERIES */
+
+/* Desktop */
+
+@media screen and (min-width: 1000px) {
+}
+
+
+/* Tablet */
+
+@media screen and (max-width: 1000px) and (min-width: 600px) {
+}
+
+/* Mobile */
+
+@media screen and (max-width: 600px) {
 }

@@ -2,19 +2,11 @@ import Head from 'next/head'
 import Image from 'next/image'
 import { Inter } from '@next/font/google'
 import styles from '../styles/About.module.css'
-import data from '/data/data.json'
 import { useRouter } from 'next/router'
 import BgUpside from 'public/background-images/backgroundMountain.jpg'
-import upArrow from 'public/icons/upwardArrow.png'
-import downArrow from 'public/icons/downwardArrow.png'
-import leftArrow from 'public/icons/leftArrow.png'
-import rightArrow from 'public/icons/rightArrow.png'
-import carouselOne from 'public/carousel-images/0.jpg'
-import carouselTwo from 'public/carousel-images/1.jpg'
-import carouselThree from 'public/carousel-images/2.jpg'
-import carouselFour from 'public/carousel-images/3.jpg'
-import carouselFive from 'public/carousel-images/4.jpg'
-import carouselSix from 'public/carousel-images/5.jpg'
+import Carousel from "@/components/carousel";
+import Link from "next/link";
+import caro from '@/styles/About.module.css'
 
 
 const inter = Inter({ subsets: ['latin'] })
@@ -78,26 +70,14 @@ export default function About() {
 
         </div>
 
-        <Image src={leftArrow} width={40} height={60} />
-        <Image src={rightArrow} width={40} height={60} />
 
-        <div id="carouselImage">
-          <div id='carouselImageTest'>
-            <Image src={carouselOne} width={40} height={60} />
-            <Image src={carouselTwo} width={40} height={60} />
-            <Image src={carouselThree} width={40} height={60} />
-            <Image src={carouselFour} width={40} height={60} />
-            <Image src={carouselFive} width={40} height={60} />
-            <Image src={carouselSix} width={40} height={60} />
+        <div className={caro.body}>
+          <div className={caro.header}>
+          </div>
+          <div className={caro.images}>
+            <Carousel />
           </div>
         </div>
-
-        <a className={styles.upDownArrows}>
-          <span>
-            <Image src={upArrow} width={40} height={60} />
-            <Image src={downArrow} width={40} height={60} />
-          </span>
-        </a>
 
         <div className={styles.departments}>
           <div></div>

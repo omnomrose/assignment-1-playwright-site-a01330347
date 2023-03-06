@@ -65,19 +65,20 @@
     height: 4px;
 }
 
-#carouselImage {
-    height: 200px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 40px 0px;
-    z-index: 100;
+.body {
+    margin: -10px;
+    min-height: 100vh;
   }
-
-#testOnImage {
-    background-color: rgba(16, 46, 53, 0.5);
-    padding: 10px;
-    margin: 0px 50px;
-}
+  
+  .header{
+    display: flex;
+    margin-left: 10vh;
+    padding-top: 10vh;
+  }
+  
+  .images{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+  }
+  

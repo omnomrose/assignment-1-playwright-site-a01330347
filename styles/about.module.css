@@ -27,13 +27,13 @@
     height: 4px;
   }
 
-.infoPara {
+.infoPara > p {
     display: flex;
     justify-content: center;
     flex-direction: column;
     justify-content: flex-start;
     width: 80%;
-    gap: 30px;
+    gap: 40px;
     margin-bottom: 50px;
 }
 
@@ -65,14 +65,19 @@
     height: 4px;
 }
 
-#carouselImages {
+#carouselImage {
     height: 200px;
-    width: 200px;
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
     justify-content: center;
-    object-fit: cover;
     align-items: center;
     margin: 40px 0px;
+    z-index: 100;
+  }
+
+#testOnImage {
+    background-color: rgba(16, 46, 53, 0.5);
+    padding: 10px;
+    margin: 0px 50px;
 }

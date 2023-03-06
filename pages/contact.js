@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import { Inter } from '@next/font/google'
-import styles from '@/styles/contact.module.css'
+import styles from '@/styles/Contact.module.css'
 import Link from 'next/link'
 import BgUpside from 'public/background-images/backgroundMountainUpsideDown.jpg'
 
@@ -29,8 +29,10 @@ export default function Contact() {
       />
 
       <main className={styles.main}>
-        <div>
+        <div className={styles.mainHeader}>
+          <div></div>
           <h1>Contact Us</h1>
+          <div></div>
         </div>
 
         <div>

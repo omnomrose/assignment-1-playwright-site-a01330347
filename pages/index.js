@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import { Inter } from '@next/font/google'
-import styles from '@/styles/home.module.css'
+import styles from '@/styles/Home.module.css'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 import Bg from 'public/background-images/backgroundMountain.jpg'
@@ -40,33 +40,38 @@ export default function Home() {
           <gradHat></gradHat>
         </div>
 
-        <div className={styles.mainHeader}>
-          <h1>An investment in <br />
-            knowledge pays the best <br />
-            interest.</h1>
+        <div className={styles.mainInfo}>
+          <div className={styles.mainHeader}>
+            <h1>An investment in <br />
+              knowledge pays the best <br />
+              interest.</h1>
+            <div className={styles.mainLine}></div>
+          </div>
+
+          <p>Different than a college or university, the British Columbia <br />
+            Institute of Technology offers practical, flexible, applied <br /> education with instructors who have direct, hands-on <br />
+            experience in their field.</p>
+
+          <a className={styles.aButtons}>
+            <button
+              className={styles.buttons}
+              onClick={() =>
+                router.push('/about')
+              }>
+              More About Us
+            </button>
+
+            <button
+              className={styles.buttons}
+              onClick={() =>
+                router.push('/contact')
+              }>
+              Contact Us
+            </button>
+          </a>
+
         </div>
 
-        <p>Different than a college or university, the British Columbia <br />
-          Institute of Technology offers practical, flexible, applied <br /> education with instructors who have direct, hands-on <br />
-          experience in their field.</p>
-
-        <a>
-          <button
-            className={styles.buttons}
-            onClick={() =>
-              router.push('/about')
-            }>
-            More About Us
-          </button>
-
-          <button
-            className={styles.buttons}
-            onClick={() =>
-              router.push('/contact')
-            }>
-            Contact Us
-          </button>
-        </a>
 
 
         <a className={styles.downArrow} href="/about">

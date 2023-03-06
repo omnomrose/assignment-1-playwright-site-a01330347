@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import { Inter } from '@next/font/google'
-import styles from '@/styles/About.module.css'
+import styles from '../styles/About.module.css'
 import data from '/data/data.json'
 import { useRouter } from 'next/router'
 import BgUpside from 'public/background-images/backgroundMountain.jpg'
@@ -55,9 +55,6 @@ export default function About() {
           <p>We are proud to deliver an education that goes beyond textbooks and classrooms.</p>
           <p>Our students gain the technical skils, real-world experience, and problem-solving ability <br /> needed to embrace complexity and lead innovation in a rapidly changing workforce.</p>
           <p>Through close collaboration with industry, our network of alumni and partners continue to <br /> achieve global success.</p>
-        </div>
-
-        <div className={styles.infoPara}>
 
           <div className={styles.subHeader}>
             <h2>Information Sessions</h2>
@@ -70,30 +67,29 @@ export default function About() {
             <h3>Big Info</h3>
           </div>
 
-          <div className={styles.infoPara}>
-            <p>Big Info is the largest program expo and information session at BCIT. It's your chance to find out about all our programs - from business, computing, and health to engineering, trades, and applied sciences.</p>
-            <p>If you missed our fall event the next Big Info is scheduled to return on February 15, 2023.</p>
-          </div>
+          <p>Big Info is the largest program expo and information session at BCIT. It's your chance to find out about all our programs - from business, computing, and health to engineering, trades, and applied sciences.</p>
+          <p>If you missed our fall event the next Big Info is scheduled to return on February 15, 2023.</p>
 
           <div className={styles.subHeader}>
             <h2>Campus Tours</h2>
           </div>
 
-          <div className={styles.infoPara}>
-            <p>Tours run weekdays September to May, on our Burnaby campus. See BCIT in person and get a taste of campus life. </p>
-          </div>
+          <p>Tours run weekdays September to May, on our Burnaby campus. See BCIT in person and get a taste of campus life. </p>
+
         </div>
 
         <Image src={leftArrow} width={40} height={60} />
         <Image src={rightArrow} width={40} height={60} />
 
-        <div id="carouselImages">
-          <Image src={carouselOne} width={40} height={60} />
-          <Image src={carouselTwo} width={40} height={60} />
-          <Image src={carouselThree} width={40} height={60} />
-          <Image src={carouselFour} width={40} height={60} />
-          <Image src={carouselFive} width={40} height={60} />
-          <Image src={carouselSix} width={40} height={60} />
+        <div id="carouselImage">
+          <div id='carouselImageTest'>
+            <Image src={carouselOne} width={40} height={60} />
+            <Image src={carouselTwo} width={40} height={60} />
+            <Image src={carouselThree} width={40} height={60} />
+            <Image src={carouselFour} width={40} height={60} />
+            <Image src={carouselFive} width={40} height={60} />
+            <Image src={carouselSix} width={40} height={60} />
+          </div>
         </div>
 
         <a className={styles.upDownArrows}>

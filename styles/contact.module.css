@@ -5,5 +5,21 @@
     align-items: center;
     padding: 13rem;
     min-height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }
 
+  .mainHeader {
+      display: flex;   
+      flex-direction: row;
+      gap: 5rem;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 50px;
+    }
+
+
+.mainHeader > div {
+    background-color: var(--secondary-color);
+    width: 60vh;
+    height: 4px;
+  }
